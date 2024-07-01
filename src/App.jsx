@@ -1,6 +1,6 @@
 // Css file for styling app component
 import './App.css';
-import Input from './components/input.js';
+import Input from './components/input';
 
 function App() {
   return (
