@@ -1,0 +1,145 @@
+.invoice-container {
+  font-family: Arial, sans-serif;
+  border: 1px solid #000;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 75px;
+}
+
+.invoice-title {
+  text-align: center;
+  flex: 1;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sold-by,
+.billing-address,
+.shipping-address {
+  width: 30%;
+}
+
+.invoice-meta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
+
+.line-items {
+  margin-top: 20px;
+}
+
+.line-items table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.line-items th,
+.line-items td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+.totals {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.signature {
+  text-align: right;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .invoice-title {
+    margin-top: 10px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .sold-by,
+  .billing-address,
+  .shipping-address {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .invoice-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .totals {
+    text-align: right;
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signature {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .line-items th,
+  .line-items td {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  .totals {
+    font-size: 1em;
+  }
+
+  .invoice-container {
+    padding: 10px;
+  }
+}
